@@ -1,1 +1,83 @@
 /* CSS 작성 */
+body {
+	margin: 0;
+}
+
+.root {
+	margin: 100px auto 48px;
+	width: 1020px;
+}
+
+.section-title {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.section-title > h2 {
+	font: var(--title-medium-24);
+}
+
+.section-title > span {
+	color: var(--color-gray);
+}
+
+.section-title > h4 {
+	color: var(--color-gray);
+	font: var(--title-medium-16);
+}
+
+.item {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+
+.item_box {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 502px;
+	height: 310px;
+	border: 1.5px solid var(--color-gray);
+	float: left;
+}
+
+.small {
+	width: 243px;
+}
+
+.item_box:hover,
+.item_box:focus-within {
+	border-color: var(--color-blue);
+}
+
+.buyButton {
+	width: 42px;
+	height: 42px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	border: none;
+	border-radius: 0px;
+	background-color: var(--color-gray);
+	color: var(--color-white);
+	transition: all 0.5s ease-in-out;
+}
+
+.item_box:hover > .buyButton,
+.item_box:focus-within > .buyButton {
+	width: 112px;
+	background-color: var(--color-blue);
+}
+
+.buyButton::before {
+	content: ">";
+	transition: content 0.5s ease-in-out;
+}
+
+.item_box:hover > .buyButton::before,
+.item_box:focus-within > .buyButton::before {
+	content: "구매하기 >";
+}

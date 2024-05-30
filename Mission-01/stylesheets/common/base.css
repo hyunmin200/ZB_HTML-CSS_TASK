@@ -1,1 +1,42 @@
-/* Base 스타일 작성 */
+:root {
+	/* Title-Bold */
+	--title-bold-16: 600 16px "Noto Sans KR";
+	--title-bold-18: 600 18px "Noto Sans KR";
+	--title-bold-24: 600 24px "Noto Sans KR";
+	--title-bold-28: 600 28px "Noto Sans KR";
+	--title-bold-32: 600 32px "Noto Sans KR";
+
+	/* Title-Medium */
+	--title-medium-16: 500 16px "Noto Sans KR";
+	--title-medium-18: 500 18px "Noto Sans KR";
+	--title-medium-24: 500 24px "Noto Sans KR";
+	--title-medium-28: 500 28px "Noto Sans KR";
+	--title-medium-32: 500 32px "Noto Sans KR";
+
+	/* Text-Bold */
+	--text-bold-12: bold 12px "Noto Sans KR";
+	--text-bold-14: bold 14px "Noto Sans KR";
+	--text-bold-16: bold 16px "Noto Sans KR";
+	--text-bold-18: bold 18px "Noto Sans KR";
+
+	/* Text-Medium */
+	--text-medium-12: 500 12px "Noto Sans KR";
+	--text-medium-14: 500 14px "Noto Sans KR";
+	--text-medium-16: 500 16px "Noto Sans KR";
+	--text-medium-18: 500 18px "Noto Sans KR";
+
+	/* Text-Regular */
+	--text-regular-12: 400 12px "Noto Sans KR";
+	--text-regular-14: 400 14px "Noto Sans KR";
+	--text-regular-16: 400 16px "Noto Sans KR";
+	--text-regular-18: 400 18px "Noto Sans KR";
+}
+
+* {
+	box-sizing: border-box;
+	font-family: "Noto Sans KR";
+}
+
+html {
+	font-size: 10px;
+}
