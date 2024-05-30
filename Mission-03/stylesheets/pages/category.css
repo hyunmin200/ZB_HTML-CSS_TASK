@@ -1,0 +1,263 @@
+/* 카테고리별 추천 광고상품 */
+.root {
+	margin: 100px auto 48px;
+	width: 1020px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.title_box {
+	width: 270px;
+	height: 46px;
+	display: flex;
+	flex-direction: column;
+}
+
+.title_box > h2 {
+	margin: 0px;
+	font: var(--title-bold-24);
+}
+
+.title_box > h3 {
+	margin: 0px;
+	font: var(--text-medium-16);
+}
+
+.blue {
+	color: var(--color-blue-600);
+}
+
+.category_box {
+	width: 1020px;
+	height: 634px;
+	display: flex;
+	gap: 16px;
+}
+
+.brown_border_box {
+	border-top: 3px solid var(--color-brown-300);
+	border-bottom: 3px solid var(--color-brown-300);
+}
+
+.green_border_box {
+	border-top: 3px solid var(--color-green-700);
+	border-bottom: 3px solid var(--color-green-700);
+}
+
+/* 첫 번째 구역 */
+
+.first_box {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.first_box-top_section {
+	display: flex;
+	flex-direction: column;
+}
+
+.first_box-top_section > article {
+	font: var(--title-medium-24);
+}
+
+.brown_article {
+	color: var(--color-brown-300);
+}
+
+.green_article {
+	color: var(--color-green-700);
+}
+
+.top_section-title-link {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	color: var(--color-gray-700);
+	font: var(--text-bold-14);
+}
+
+.arrow-svg {
+	width: 6px;
+	height: 10px;
+	background-image: url("../../assets/icon/angle-right-default.svg");
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: contain;
+}
+
+.first_box-bottom_section {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.first_box-bottom_section h2 {
+	font: var(--title-medium-18);
+}
+
+.bottom_section-tag_box {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.tag {
+	width: max-content;
+	padding: 6px 10px;
+	border: 2px solid var(--color-gray-400);
+	color: var(--color-brown-300);
+	font: var(--text-bold-12);
+}
+
+.brown_tag {
+	color: var(--color-brown-300);
+}
+
+.green_tag {
+	color: var(--color-green-700);
+}
+
+/* 두 번째 구역 */
+.second_box {
+	position: relative;
+}
+
+.second_box > img {
+	width: 320px;
+	height: 629px;
+}
+
+.second_box-detail {
+	width: 260px;
+	height: 90px;
+	position: absolute;
+	bottom: 58px;
+	left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--color-white);
+}
+
+.brown_detail {
+	background-color: var(--color-brown-300);
+}
+
+.green_detail {
+	background-color: var(--color-green-700);
+}
+
+.second_box-detail > h3 {
+	margin: 0px;
+	font: var(--text-bold-18);
+}
+
+.second_box-detail > span {
+	font: var(--text-regular-14);
+}
+
+.second_box-slide_pos {
+	position: absolute;
+	bottom: 22px;
+	left: 144px;
+	display: flex;
+	gap: 8px;
+}
+
+.second_box-slide_pos > div {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+}
+
+.second_box-slide_pos > div:first-child {
+	background-color: var(--color-gray-700);
+}
+
+.second_box-slide_pos > div:last-child {
+	background-color: var(--color-gray-600);
+}
+
+/* 세 번째 구역 */
+.third_box {
+	position: relative;
+}
+
+.card_list {
+	padding: 9px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+
+.card_list::before {
+	content: "";
+	width: 528px;
+	height: 1px;
+	position: absolute;
+	bottom: 312px;
+	background-color: var(--color-gray-600);
+}
+
+.card {
+	width: 160px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.card:hover {
+	border: 2px solid var(--color-blue-400);
+}
+
+.card > img {
+	width: 160;
+	height: 160px;
+}
+
+.card-detail {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	font: var(--text-regular-14);
+}
+
+.card-detail > p {
+	margin: 0px;
+}
+
+.card-detail > span > strong {
+	font: var(--text-bold-18);
+}
+
+.detail-info {
+	width: 135px;
+	height: 27px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.detail-info > span > strong {
+	font: var(--text-bold-18);
+}
+
+.detail {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.detail > span {
+	color: var(--color-red-500);
+	font: var(--text-regular-14);
+}
