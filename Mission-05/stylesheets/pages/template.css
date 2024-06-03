@@ -1,0 +1,211 @@
+/* ---------------------------------------------- */
+/* 헤더                                            */
+/* ---------------------------------------------- */
+.header {
+	width: 100%;
+	height: 116px;
+}
+
+.header__inner {
+	margin: 0px auto;
+	width: 1020px;
+	height: 100%;
+}
+
+.button--category {
+	width: 110px;
+	height: 116px;
+	border: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 12px;
+	background-color: var(--color-blue-600);
+	color: var(--color-white);
+	font: var(--text-regular-12);
+}
+
+/* ---------------------------------------------- */
+/* 내비게이션                                        */
+/* ---------------------------------------------- */
+.navigation {
+	margin: 0px auto;
+	width: 1020px;
+}
+
+.navigation__inner {
+	width: 540px;
+	display: flex;
+	box-shadow: 0px 1px 2.5px 0.5px var(--color-gray-400);
+}
+
+.navigation__list {
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+}
+
+.navigation__list:not(:first-child) {
+	box-shadow: -3px 0px 5px -2px var(--color-gray-400);
+}
+
+.navigation__list li {
+	width: 170px;
+	height: 30px;
+	padding: 0px 0px 0px 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 4px;
+	font: var(--text-bold-12);
+}
+
+.navigation__list li:hover,
+.navigation__list li:focus-within {
+	border: 2px solid var(--color-blue-600);
+	color: var(--color-blue-600);
+	cursor: pointer;
+}
+
+.is--active {
+	background-image: url("../../assets/icon/more-right-active.svg");
+	background-repeat: no-repeat;
+	background-size: 15px 9px;
+	background-position: center right;
+}
+
+/* ---------------------------------------------- */
+/* 메인 콘텐츠                                       */
+/* ---------------------------------------------- */
+/* 메인 콘텐츠 영역의 최소 높이 설정 */
+.main {
+	min-height: 52rem;
+}
+
+/* ---------------------------------------------- */
+/* 푸터                                            */
+/* ---------------------------------------------- */
+.footer {
+	width: 100%;
+	height: 349px;
+}
+
+.footer-first_section {
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+	background-color: var(--color-gray-200);
+	font: var(--text-regular-12);
+}
+
+.footer-first_section b {
+	font: var(--text-bold-12);
+}
+
+.footer-second_section {
+	height: 207px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.second_section-group {
+	display: flex;
+	justify-content: center;
+	gap: 62px;
+}
+
+.detail-box {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.logo {
+	width: 176px;
+	height: 40px;
+	background-image: url("../../assets/logo/logo-mono.svg");
+	background-repeat: no-repeat;
+	color: var(--color-gray-600);
+	font: var(--title-medium-32);
+}
+
+.detail1 {
+	color: var(--color-gray-800);
+	font: var(--text-regular-16);
+}
+
+.detail2 {
+	color: var(--color-gray-800);
+	font: var(--text-regular-16);
+}
+
+.detail2 > div > span:first-child {
+	padding: 0px 5px 0px 0px;
+	border-right: 2px solid var(--color-gray-600);
+}
+
+.detail2 b {
+	font: var(--text-bold-16);
+}
+
+.detail2 > a:first-child {
+	color: var(--color-gray-800);
+	font: var(--title-bold-32);
+}
+
+.detail3 {
+	color: var(--color-gray-800);
+	font: var(--text-regular-16);
+}
+
+.detail3 b {
+	font: var(--text-bold-16);
+}
+
+.footer-third_section {
+	height: 120px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--color-gray-900);
+}
+
+.third_section-group {
+	display: flex;
+	align-items: flex-end;
+	gap: 50px;
+	color: var(--color-gray-200);
+	font: var(--text-regular-12);
+}
+
+.third_section-group b {
+	color: var(--color-gray-600);
+}
+
+.third_section-icon_group {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.third_section-icon_group a:nth-child(3) > img {
+	width: 34px;
+	height: 34px;
+	border-radius: 50px;
+	background: linear-gradient(
+		174.12deg,
+		#2856eb 5.61%,
+		#bc1888 22.32%,
+		#cc2366 36.16%,
+		#dc2743 51.91%,
+		#e6683c 73.38%,
+		#f09433 91.99%
+	);
+}
